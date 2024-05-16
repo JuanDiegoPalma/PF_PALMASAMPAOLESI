@@ -1,0 +1,4 @@
+Agregue la descripcion a todos los alt de todas las imagenes.
+Agregue etiquetas meta (description, keywords) en index, productos y nosotros.
+Agregue favicon en todas la paginas.
+Coloque titulos en todas las paginas.

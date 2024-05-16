@@ -1,0 +1,226 @@
+// variables
+$color1: #28696A;
+$colorBoton: rgba(128, 128, 128, 0.333);
+
+// variables
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Retosta;
+    src: url(./assets/font/Retosta.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+    height: 80px;
+    padding: 10px;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    font-family: Retosta;
+    z-index: 2;
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+}
+
+main{
+    height: 100vh;
+    background-image: url(./assets/multimedia/ai-generated-7795815_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: Retosta;
+}
+.mainColored{
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+}
+.call{
+    width: 75%;
+    border: 5px solid black;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+    a{
+        color: black;
+    text-decoration: none;
+    padding: 20px;
+    &:hover{
+        background-color: grey;
+    }
+    }
+}
+
+
+
+h1{
+    font-family: Retosta;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+h2{
+    color: $color1;
+    padding-top: 35px;
+    text-align: center;
+}
+
+h3{
+    @extend h1;
+}
+
+h4{
+    @extend h1;
+}
+
+p{
+    padding: 20px;
+}
+
+.galeriaProd{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas:
+    "img6 img6 img6 img6"
+    "img7 img7 img8 img8" 
+    "img7 img7 img9 img9";
+    grid-gap: 15px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas:
+    "img3 img3 img3 img3"
+    "img2 img2 img4 img4" 
+    "img5 img5 img1 img1";
+    grid-gap: 15px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+}
+
+.item{
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    transition: all 0.7s;
+    &:hover{
+        filter: grayscale(100%);
+    transform: scale(1.09);
+    }
+}
+
+
+.item1{
+    grid-area: img1;
+    background-image: url(./assets/multimedia/cafe-6019474_1280.jpg);
+}
+
+.item2{
+    grid-area: img2;
+    background-image: url(./assets/multimedia/coffee-2306471_640.jpg);
+}
+
+.item3{
+    grid-area: img3;
+    background-image: url(./assets/multimedia/coffee-2560260_1280.jpg);
+}
+
+.item4{
+    grid-area: img4;
+    background-image: url(./assets/multimedia/coffee-2425303_1280.jpg);
+}
+
+.item5{
+    grid-area: img5;
+    background-image: url(./assets/multimedia/street-cafe-4472312_1280.jpg);
+}
+
+.item6{
+    grid-area: img6;
+    background-image: url(./assets/multimedia/doughnuts-1868573_640.jpg);
+}
+
+.item7{
+    grid-area: img7;
+    background-image: url(./assets/multimedia/tart-2002839_640.jpg);
+}
+
+.item8{
+    grid-area: img8;
+    background-image: url(./assets/multimedia/cookies-4053771_640.jpg);
+}
+
+.item9{
+    grid-area: img9;
+    background-image: url(./assets/multimedia/cake-8734537_640.jpg);
+}
+
+.h3Carrusel{
+    font-family: Retosta;
+    font-size: 22px;
+    color: $color1;
+}
+
+.pCarrusel{
+    font-size: 15px;
+    color: $color1;
+}
+
+form{
+    padding: 50px;
+}
+
+.form-label{
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+.botonEnviar{
+    background-color: $colorBoton;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer{
+    background-image: linear-gradient(to right, #28696a, #457576, #5d8282, #758e8e, #8c9b9b, #939d9d, #999f9f, #a0a1a1, #989999, #909091, #888888, #808080);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    p{
+        font-size: 20px;
+    }
+    a{
+        color: white;
+    text-decoration: none;
+    font-size: 25px;
+    }
+}
+
+.subir{
+    height: 25px;
+    width: 25px;
+    background-color: $colorBoton;
+    color: white;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+}
