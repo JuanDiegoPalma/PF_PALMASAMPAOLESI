@@ -1,5 +1,6 @@
 // variables
 $color1: #28696A;
+$color2: #989999;
 $colorBoton: rgba(128, 128, 128, 0.333);
 
 // variables
@@ -12,7 +13,7 @@ $colorBoton: rgba(128, 128, 128, 0.333);
 
 @font-face {
     font-family: Retosta;
-    src: url(./assets/font/Retosta.otf);
+    src: url(../assets/font/Retosta.otf);
 }
 
 html{
@@ -33,7 +34,7 @@ header{
 
 main{
     height: 100vh;
-    background-image: url(./assets/multimedia/ai-generated-7795815_1280.jpg);
+    background-image: url(../assets/multimedia/ai-generated-7795815_1280.jpg);
     background-size: cover;
     background-position: center;
     color: black;
@@ -126,47 +127,27 @@ p{
 
 .item1{
     grid-area: img1;
-    background-image: url(./assets/multimedia/cafe-6019474_1280.jpg);
+    background-image: url(../assets/multimedia/cafe-6019474_1280.jpg);
 }
 
 .item2{
     grid-area: img2;
-    background-image: url(./assets/multimedia/coffee-2306471_640.jpg);
+    background-image: url(../assets/multimedia/coffee-2306471_640.jpg);
 }
 
 .item3{
     grid-area: img3;
-    background-image: url(./assets/multimedia/coffee-2560260_1280.jpg);
+    background-image: url(../assets/multimedia/coffee-2560260_1280.jpg);
 }
 
 .item4{
     grid-area: img4;
-    background-image: url(./assets/multimedia/coffee-2425303_1280.jpg);
+    background-image: url(../assets/multimedia/coffee-2425303_1280.jpg);
 }
 
 .item5{
     grid-area: img5;
-    background-image: url(./assets/multimedia/street-cafe-4472312_1280.jpg);
-}
-
-.item6{
-    grid-area: img6;
-    background-image: url(./assets/multimedia/doughnuts-1868573_640.jpg);
-}
-
-.item7{
-    grid-area: img7;
-    background-image: url(./assets/multimedia/tart-2002839_640.jpg);
-}
-
-.item8{
-    grid-area: img8;
-    background-image: url(./assets/multimedia/cookies-4053771_640.jpg);
-}
-
-.item9{
-    grid-area: img9;
-    background-image: url(./assets/multimedia/cake-8734537_640.jpg);
+    background-image: url(../assets/multimedia/street-cafe-4472312_1280.jpg);
 }
 
 .h3Carrusel{
@@ -178,6 +159,17 @@ p{
 .pCarrusel{
     font-size: 15px;
     color: $color1;
+}
+
+.card-body{
+    background-color: $color2;
+}
+
+.botonPedir{
+    background-color: $color1;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 form{
